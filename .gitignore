@@ -1,0 +1,15 @@
+aws-env.config
+
+.terraform
+tf.out
+terraform.tfstate
+terraform.tfvars
+.terraform.tfstate.lock.info
+*.tfstate.backup
+id_rsa
+id_rsa.pub
+*.json
+
+configuration.nix
+init.sh
+email.txt
