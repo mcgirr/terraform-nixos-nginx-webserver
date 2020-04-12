@@ -40,13 +40,14 @@ variable "public_subnet_cidr" {
 
 variable "public_subnet_extra_tags" {
   description = "Extra tags that will be added to public subnets."
-  default     = {}
+  default     = {} # TODO remove default
   type        = map
 }
 
+# TODO review
 variable "public_gateway_extra_tags" {
   description = "Extra tags that will be added to Internet Gateway and public Routing Tables."
-  default     = {}
+  default     = {} # TODO remove default
   type        = map
 }
 
@@ -96,7 +97,7 @@ variable "az" {
 
 variable "vpc_extra_tags" {
   description = "Extra tags that will be added to VPC and DHCP Options. Note that duplicate keys will overwrite those from the extra_tags variable."
-  default     = {}
+  default     = {} # TODO remove default
   type        = map
 }
 

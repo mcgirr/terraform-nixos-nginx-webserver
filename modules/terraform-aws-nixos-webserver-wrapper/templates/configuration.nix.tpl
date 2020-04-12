@@ -39,11 +39,9 @@
         locations."/" = {
           root = "/var/www/${content_location}/_site";
         };
-
-
       };
 
-      # TODO combine this with the above so that this doesn't repeat itself
+      # TODO combine this with the above so that this doesn't repeat itself 
 
       "${domain}" = {
         forceSSL = true;
@@ -53,7 +51,6 @@
         locations."/" = {
           root = "/var/www/${content_location}/_site";
         };
-
       };
 
     };
