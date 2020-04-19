@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "mikemcgirr-com-server" {
-  source = "../modules/mikemcgirr-com-webserver-aws-wrapper"
+  source = "../modules/terraform-aws-nixos-webserver-wrapper"
 
   name_prefix = local.name_prefix
   base_domain = local.base_domain
