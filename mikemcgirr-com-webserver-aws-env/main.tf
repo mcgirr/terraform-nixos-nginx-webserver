@@ -9,6 +9,9 @@ module "mikemcgirr-com-server" {
   name_prefix = local.name_prefix
   base_domain = local.base_domain
   hostname    = local.hostname
+
+  content_location = local.content_location
+
   region      = local.region
 
   email = var.email

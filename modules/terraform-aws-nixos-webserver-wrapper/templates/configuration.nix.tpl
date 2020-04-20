@@ -37,8 +37,7 @@
         enableACME = true;
 
         locations."/" = {
-          # TODO set from an input variable
-          root = "/var/www/mikemcgirr-com/_site";
+          root = "/var/www/${content_location}/_site";
         };
 
 
@@ -52,8 +51,7 @@
         enableACME = true;
 
         locations."/" = {
-          # TODO set from an input variable
-          root = "/var/www/mikemcgirr-com/_site";
+          root = "/var/www/${content_location}/_site";
         };
 
       };

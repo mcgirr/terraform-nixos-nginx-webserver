@@ -18,6 +18,11 @@ variable "email" {
   type        = string
 }
 
+variable "content_location" {
+  description = "The location on the AWS instance where the web content will be located."
+  type        = string
+}
+
 variable "region" {
   description = "The region to create AWS resources in for the web server"
   type        = string
