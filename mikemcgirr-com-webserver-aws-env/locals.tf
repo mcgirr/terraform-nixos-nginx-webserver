@@ -2,6 +2,10 @@ locals {
   name_prefix = "mikemcgirr"
   base_domain = "${local.name_prefix}.com"
   hostname    = "mikemcgirr"
+
+  content_location = "mikemcgirr-com"
+  # Used to set things like /var/www/${content_location}/_site as the root of the site
+
   region      = "us-west-2"
 
   vpc_cidr = "10.0.0.0/16"
