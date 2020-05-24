@@ -87,11 +87,11 @@ variable "enable_dns_support" {
 
 variable "dns_servers" {
   description = "List of name servers to configure in /etc/resolv.conf. If you want to use the default AWS nameservers you should set this to AmazonProvidedDNS"
-  type        = list
+  type        = list(string)
 }
 
 variable "az" {
-  description = "A list of Availaiblity Zones in the region"
+  description = "An availaiblity zone in this region"
   type        = string
 }
 
