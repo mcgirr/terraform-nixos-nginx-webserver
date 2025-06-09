@@ -14,3 +14,49 @@ configuration.nix
 init.sh
 email.txt
 TODO.md
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+*.vsix
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# General
+*.log
+*.tmp
+*.temp
+.env
+.env.local
+
+# Claude
+CLAUDE.md
