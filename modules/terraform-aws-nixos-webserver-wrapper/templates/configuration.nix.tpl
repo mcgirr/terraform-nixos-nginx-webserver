@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   imports = [
-    <nixpkgs/nixos/modules/virtualisation/amazon-image.nix>
+    <Nixpkgs/nixos/modules/virtualisation/amazon-image.nix>
   ];
 
   ec2.hvm = true;
@@ -9,7 +9,7 @@
   networking = {
     hostName = "${hostname}";
 
-    enableIPv6 = true; 
+    enableIPv6 = true;
 
     # Open ports in the firewall.
     firewall.allowedTCPPorts = [
@@ -39,8 +39,6 @@
         locations."/" = {
           root = "/var/www/${content_location}/_site";
         };
-
-
       };
 
       # TODO combine this with the above so that this doesn't repeat itself
@@ -53,7 +51,6 @@
         locations."/" = {
           root = "/var/www/${content_location}/_site";
         };
-
       };
 
     };

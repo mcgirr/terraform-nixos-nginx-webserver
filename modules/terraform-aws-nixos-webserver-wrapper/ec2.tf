@@ -81,6 +81,9 @@ resource "aws_instance" "web_server" {
     kms_key_id = aws_kms_key.root.arn
   }
 
+  # ebs_block_device cannot be mixed with external aws_ebs_volume and
+  # aws_volume_attachment resources for a given instance.
+
   tags = {
     Name      = "${var.name_prefix}-web-server"
     Terraform = true

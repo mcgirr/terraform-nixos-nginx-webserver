@@ -40,13 +40,14 @@ variable "public_subnet_cidr" {
 
 variable "public_subnet_extra_tags" {
   description = "Extra tags that will be added to public subnets."
-  default     = {}
+  default     = {} # TODO remove default
   type        = map
 }
 
+# TODO review
 variable "public_gateway_extra_tags" {
   description = "Extra tags that will be added to Internet Gateway and public Routing Tables."
-  default     = {}
+  default     = {} # TODO remove default
   type        = map
 }
 
@@ -86,17 +87,17 @@ variable "enable_dns_support" {
 
 variable "dns_servers" {
   description = "List of name servers to configure in /etc/resolv.conf. If you want to use the default AWS nameservers you should set this to AmazonProvidedDNS"
-  type        = list
+  type        = list(string)
 }
 
 variable "az" {
-  description = "A list of Availaiblity Zones in the region"
+  description = "An availaiblity zone in this region"
   type        = string
 }
 
 variable "vpc_extra_tags" {
   description = "Extra tags that will be added to VPC and DHCP Options. Note that duplicate keys will overwrite those from the extra_tags variable."
-  default     = {}
+  default     = {} # TODO remove default
   type        = map
 }
 

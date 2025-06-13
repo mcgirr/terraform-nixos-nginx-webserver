@@ -56,4 +56,4 @@ module "web-server-https-rule" {
   security_group_id = module.web-server-sg.id
 }
 
-# TODO add ping icmp 
+# TODO add ping icmp
